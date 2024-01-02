@@ -1,0 +1,572 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.16f1 (d2c21f0ef2f1) revision 13812255'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'it' Physical Memory: 32653 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/Fantin Jacopo/Poker-Winter-Edition
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+54246
+Successfully changed project path to: C:/Users/Fantin Jacopo/Poker-Winter-Edition
+C:/Users/Fantin Jacopo/Poker-Winter-Edition
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [11828] Host "[IP] 192.168.1.9 [Port] 0 [Flags] 2 [Guid] 1400528272 [EditorId] 1400528272 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4U1JB59) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [11828] Host "[IP] 192.168.1.9 [Port] 0 [Flags] 2 [Guid] 1400528272 [EditorId] 1400528272 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4U1JB59) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 10.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.16f1 (d2c21f0ef2f1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Fantin Jacopo/Poker-Winter-Edition/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2487)
+    Vendor:   NVIDIA
+    VRAM:     12124 MB
+    Driver:   31.0.15.4633
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009982 seconds.
+- Loaded All Assemblies, in  0.323 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.237 seconds
+Domain Reload Profiling: 559ms
+	BeginReloadAssembly (90ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (133ms)
+		LoadAssemblies (88ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (131ms)
+			TypeCache.Refresh (129ms)
+				TypeCache.ScanAssembly (116ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (237ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (185ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (128ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.525 seconds
+Refreshing native plugins compatible for Editor in 3.09 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.620 seconds
+Domain Reload Profiling: 1143ms
+	BeginReloadAssembly (129ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (313ms)
+		LoadAssemblies (250ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (136ms)
+			TypeCache.Refresh (120ms)
+				TypeCache.ScanAssembly (107ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (621ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (500ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (409ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 4.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (57.2 KB). Loaded Objects now: 3564.
+Memory consumption went from 128.2 MB to 128.1 MB.
+Total: 4.037700 ms (FindLiveObjects: 0.303200 ms CreateObjectMapping: 0.074300 ms MarkObjects: 3.477000 ms  DeleteObjects: 0.182200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 25957.951546 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_LittleDeck_00.prefab
+  artifactKey: Guid(939382b70a855e640958d4c788588909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_LittleDeck_00.prefab using Guid(939382b70a855e640958d4c788588909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c099e6f85df1e6b1a41008c7786c6743') in 0.174070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Joker_10.prefab
+  artifactKey: Guid(f159042dbbae6894bad245994e07937d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Joker_10.prefab using Guid(f159042dbbae6894bad245994e07937d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c7c6594656984b5eac8adffc0fa4331') in 0.137362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club10_00.prefab
+  artifactKey: Guid(4f1ac5d9bb0145e478692d54589f8967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club10_00.prefab using Guid(4f1ac5d9bb0145e478692d54589f8967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '021575d5c235ad22c3c1d2316dfce46c') in 0.012501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_Tower_00.prefab
+  artifactKey: Guid(5aefb09db03fce9488b5b8185fd38c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_Tower_00.prefab using Guid(5aefb09db03fce9488b5b8185fd38c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f3fc4b76896d66adfc09bff0bdccfd4') in 0.015155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_Spread_00.prefab
+  artifactKey: Guid(9ef7d9aaf03690143840973fe712bd0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_Spread_00.prefab using Guid(9ef7d9aaf03690143840973fe712bd0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e158c6351e0d7d2781f23607765a39a8') in 0.014656 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Heart11_00.prefab
+  artifactKey: Guid(620c87bdd851fd4438708a75ad328e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Heart11_00.prefab using Guid(620c87bdd851fd4438708a75ad328e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332d6a38a55fb00934ede54d528f6d0f') in 0.011108 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Diamond10_00.prefab
+  artifactKey: Guid(5af0cda9ec825d343a55947605f315da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Diamond10_00.prefab using Guid(5af0cda9ec825d343a55947605f315da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72a7e3840ce5d4095ddc5a58d888fb8') in 0.013642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Spade06_00.prefab
+  artifactKey: Guid(7dd524b18c5befe4d8de4601b1ee9324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Spade06_00.prefab using Guid(7dd524b18c5befe4d8de4601b1ee9324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec928861b3e66bdfdb15c276fd3454b') in 0.011991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club11_00.prefab
+  artifactKey: Guid(60378eeda91387f4384f20f946f6bc50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club11_00.prefab using Guid(60378eeda91387f4384f20f946f6bc50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc1e4af58331acf72dba776ec25edb3c') in 0.014008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Spade04_00.prefab
+  artifactKey: Guid(c68d5787d30e4b24ca2669f11ad30a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Spade04_00.prefab using Guid(c68d5787d30e4b24ca2669f11ad30a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfaaa20a2f88a15dbb518cde4f56d167') in 0.013083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_RifleShuffle_First_00.prefab
+  artifactKey: Guid(0661497767262874fa5dd701b9159dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_RifleShuffle_First_00.prefab using Guid(0661497767262874fa5dd701b9159dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a808148bc2d7cbdf76a5c54df8c81cb') in 0.094656 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Heart12_00.prefab
+  artifactKey: Guid(425dc71b99f464b40a05a444025dcd33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Heart12_00.prefab using Guid(425dc71b99f464b40a05a444025dcd33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63561a8400c9b117c106b7c56dede62c') in 0.015543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Diamond09_00.prefab
+  artifactKey: Guid(23de0e6d7c9599b41adff62ca13f9c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Diamond09_00.prefab using Guid(23de0e6d7c9599b41adff62ca13f9c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49e50c08014d3393ba401203b885caa') in 0.016199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Spade05_00.prefab
+  artifactKey: Guid(e6ff6187ffb7e6441ac0124027a23a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Spade05_00.prefab using Guid(e6ff6187ffb7e6441ac0124027a23a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f9e6d06611eb6559bb369e0bfa4ec32') in 0.013593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Joker_00.prefab
+  artifactKey: Guid(75f188bdf26238344aab0154f762f9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Joker_00.prefab using Guid(75f188bdf26238344aab0154f762f9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3052288a732c390c0ca561ee5017c267') in 0.013501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_LittleDiscard_00.prefab
+  artifactKey: Guid(546873e5032c4514cadf753d24871305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_LittleDiscard_00.prefab using Guid(546873e5032c4514cadf753d24871305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ba8385ea67b06db25b9c58834bac18') in 0.016226 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Diamond03_00.prefab
+  artifactKey: Guid(ffe8af5b3c9db6148ae35786adc66d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Diamond03_00.prefab using Guid(ffe8af5b3c9db6148ae35786adc66d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc7edbf40e1f997e3851e2188aecfec') in 0.015027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club13_00.prefab
+  artifactKey: Guid(758e7572125d74344aef6bbc00783a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club13_00.prefab using Guid(758e7572125d74344aef6bbc00783a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49a7694f071c7d8505cc615b7e420a3') in 0.016339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Diamond06_00.prefab
+  artifactKey: Guid(f2e20d53ab88dcd4fa5a71d8a73c6573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Diamond06_00.prefab using Guid(f2e20d53ab88dcd4fa5a71d8a73c6573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad3e3eae7851b77452dadde8c2934242') in 0.014904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club09_00.prefab
+  artifactKey: Guid(20da808ab2a24cf4393462bd72022ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club09_00.prefab using Guid(20da808ab2a24cf4393462bd72022ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bec82216b57fa3d5d538bfce5cd49cd8') in 0.012094 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club04_00.prefab
+  artifactKey: Guid(f24ec402e5fe84f409dceac116ca2781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club04_00.prefab using Guid(f24ec402e5fe84f409dceac116ca2781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6586d71bcff7144dd74e11ad8c452cae') in 0.012348 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Diamond05_00.prefab
+  artifactKey: Guid(be89d8923af43af4e832cad1de782dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Diamond05_00.prefab using Guid(be89d8923af43af4e832cad1de782dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72813a857c0627977c4bff70238ccd9b') in 0.012468 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club06_00.prefab
+  artifactKey: Guid(57c32fca1cf574847a9e8df604000fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Blue/Blue_PlayingCards_Club06_00.prefab using Guid(57c32fca1cf574847a9e8df604000fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0291618d4bd2a86b66d8c8c77444dfc') in 0.010157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 9.964564 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_LittleDeck_00.prefab
+  artifactKey: Guid(96a1242c4b2cecc48b675881bae31930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_LittleDeck_00.prefab using Guid(96a1242c4b2cecc48b675881bae31930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2804b9fbdeffde8c88fe50ce3c5812f2') in 0.014714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club01_00.prefab
+  artifactKey: Guid(caab6bb7ecb7ed741b612973ab7b297b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club01_00.prefab using Guid(caab6bb7ecb7ed741b612973ab7b297b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e32699379c95361086533319368dc686') in 0.006430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade09_00.prefab
+  artifactKey: Guid(6bd75065bd1767b449c0ff49fbe46182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade09_00.prefab using Guid(6bd75065bd1767b449c0ff49fbe46182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee336dfb414344288573802ca7c9f72f') in 0.006910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart12_00.prefab
+  artifactKey: Guid(77f9305f9f32fff4f81277ea034cb500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart12_00.prefab using Guid(77f9305f9f32fff4f81277ea034cb500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a3e1b76accd849c102b7a2a21ac6aea') in 0.005734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Blank_00.prefab
+  artifactKey: Guid(2f21bec7f30c7d744a280a41c7e1980a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Blank_00.prefab using Guid(2f21bec7f30c7d744a280a41c7e1980a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4606030f4e4072ea1566c760fd286b7f') in 0.013808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart09_00.prefab
+  artifactKey: Guid(42ca9df923c7adc418eb2e62b8422389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart09_00.prefab using Guid(42ca9df923c7adc418eb2e62b8422389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e420e782939e4b12b580c6569e6b7b8') in 0.019538 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond07_00.prefab
+  artifactKey: Guid(f08b8f0e108d7e849aa4f0ee9711475e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond07_00.prefab using Guid(f08b8f0e108d7e849aa4f0ee9711475e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6905165e1d268ee70d52c4314127f353') in 0.031236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club05_00.prefab
+  artifactKey: Guid(9d79033ce0ee51e42a6c58859a34d1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club05_00.prefab using Guid(9d79033ce0ee51e42a6c58859a34d1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c99f118a6103bb46c73098e68b3de10') in 0.020598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club06_00.prefab
+  artifactKey: Guid(3ebc3c32e60c5f84b942bdfeded6669d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club06_00.prefab using Guid(3ebc3c32e60c5f84b942bdfeded6669d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa3f883012196720ae7a837546529f53') in 0.015970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond12_00.prefab
+  artifactKey: Guid(a6cba7b2813f8474cb3b48d1d236bfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond12_00.prefab using Guid(a6cba7b2813f8474cb3b48d1d236bfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb10ce94b4bda012a0604da733eb7ae') in 0.014128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade02_00.prefab
+  artifactKey: Guid(87a4584f10819a14e93074577ea70754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade02_00.prefab using Guid(87a4584f10819a14e93074577ea70754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '524d78d46bf077f235390cf09e5949ce') in 0.020845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club12_00.prefab
+  artifactKey: Guid(2faff22567e6bef43b47d903398823b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club12_00.prefab using Guid(2faff22567e6bef43b47d903398823b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dfd88579451933db805481aa35e5017') in 0.012678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade08_00.prefab
+  artifactKey: Guid(86323d8e5eb7d1a4aa5f1089c77841d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade08_00.prefab using Guid(86323d8e5eb7d1a4aa5f1089c77841d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3026375d7d0a6095274cf178d300114') in 0.006143 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club09_00.prefab
+  artifactKey: Guid(0a68482a7e72e3f4aa4f8652a2035548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club09_00.prefab using Guid(0a68482a7e72e3f4aa4f8652a2035548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0db4d9bacbde9ca9ee998ae8d0d55abe') in 0.006982 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club08_00.prefab
+  artifactKey: Guid(7f15d67ce34586d4ca9e3eca7292533a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Club08_00.prefab using Guid(7f15d67ce34586d4ca9e3eca7292533a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a056d21807743470cd40e32a8feec6bc') in 0.007400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond06_00.prefab
+  artifactKey: Guid(835d300e708af14478bae3e96f5fd26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond06_00.prefab using Guid(835d300e708af14478bae3e96f5fd26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6d5e767a7393cf89e73c6ead1b09ef5') in 0.006150 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_Spread_00.prefab
+  artifactKey: Guid(072008be8c709e945bc60bda3cdc6f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_Spread_00.prefab using Guid(072008be8c709e945bc60bda3cdc6f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9ca7b92165b2bc1f453b55ff5d6cdd1') in 0.007741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond05_00.prefab
+  artifactKey: Guid(e4e6b9e25c5823640abf889c4d74db76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Diamond05_00.prefab using Guid(e4e6b9e25c5823640abf889c4d74db76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e758163ba8c1ec3123ff211393f92e0f') in 0.007103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade12_00.prefab
+  artifactKey: Guid(091c8ef8838faba4b9cdbfacfd334e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade12_00.prefab using Guid(091c8ef8838faba4b9cdbfacfd334e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a532a0d255e01eee955044a526098165') in 0.006199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_Tower_00.prefab
+  artifactKey: Guid(1e35d8ec82137df4fa376169aa162a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_Tower_00.prefab using Guid(1e35d8ec82137df4fa376169aa162a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b481de96e5a36586315d5688ef86e47d') in 0.014519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart06_00.prefab
+  artifactKey: Guid(678ad90abddb61244a376d80176fd222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart06_00.prefab using Guid(678ad90abddb61244a376d80176fd222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acae70524d104dd042922560679586d8') in 0.007478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_LittleDiscard_00.prefab
+  artifactKey: Guid(b72bcdd78519def4aa7362aa9e2a5da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_LittleDiscard_00.prefab using Guid(b72bcdd78519def4aa7362aa9e2a5da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bec2ea0e7129434d4962f33ecd514881') in 0.008762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade06_00.prefab
+  artifactKey: Guid(d1a158d1833c26a4eb58c89a74e2641d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Spade06_00.prefab using Guid(d1a158d1833c26a4eb58c89a74e2641d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c842869862cd64b2de506891a2f3548') in 0.006388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart05_00.prefab
+  artifactKey: Guid(fd18434b1453ebc4f9650cfea2c495dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_PlayingCards_Heart05_00.prefab using Guid(fd18434b1453ebc4f9650cfea2c495dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae76ed181da3b7f99420af1cba16dd8') in 0.006957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_ManyDiscard_00.prefab
+  artifactKey: Guid(3977fd7fb55dc764c825f3f534f8ff65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Playing Cards/Resource/Prefab/BackColor_Black/Black_ManyDiscard_00.prefab using Guid(3977fd7fb55dc764c825f3f534f8ff65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54653ba5440ad5d1d29aa8e39757846a') in 0.013617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Operazione di I/O terminata a causa dell'uscita dal thread oppure della richiesta di un'applicazione.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
