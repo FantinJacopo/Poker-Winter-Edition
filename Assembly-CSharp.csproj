@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Player.cs" />
+    <Compile Include="Assets\Game.cs" />
     <Compile Include="Assets\Animations.cs" />
     <Compile Include="Assets\SettingsMenu.cs" />
     <Compile Include="Assets\Card.cs" />

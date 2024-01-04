@@ -15,9 +15,6 @@ namespace Assets
         public float xRotation { get; set; }
         public float yRotation { get; set; }
         public float zRotation { get; set; }
-        /*public float xRotationDegrees => xRotation * Mathf.Rad2Deg;
-        public float yRotationDegrees => yRotation * Mathf.Rad2Deg;
-        public float zRotationDegrees => zRotation * Mathf.Rad2Deg;*/
         public CardPosition(float x, float y, float z, float xRotation, float yRotation, float zRotation)
         {
             this.x = x;

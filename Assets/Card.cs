@@ -18,5 +18,28 @@ namespace Assets
             this.value = value;
             this.name = name;
         }
+        public Card(GameObject card)
+        {
+            suit = card.name.Split('_')[1];
+            value = GetCardValue(card.name.Split('_')[0]);
+            name = card.name;
+
+        }
+        private int GetCardValue(string val)
+        {
+            switch (val)
+            {
+                case "J":
+                    return 11;
+                case "Q":
+                    return 12;
+                case "K":
+                    return 13;
+                case "A":
+                    return 14;
+                default:
+                    return int.Parse(val);
+            }
+        }
     }
 }

@@ -9,7 +9,9 @@ namespace Assets
         List<GameObject> cards = new();
         List<GameObject> players = new();
         List<GameObject> playersCardsPositions = new();
-        List<Player> playerList = new();
+        //List<Player> playerList = new();
+        //List<Card> cardsList = new();
+        Game game = new();
 
         float startingY;
         float startingX;
@@ -24,6 +26,7 @@ namespace Assets
             {
                 GameObject card = deck.transform.GetChild(i).gameObject;
                 cards.Add(card);
+                game.Cards.Add(new(card));
             }
             startingY = cards[0].transform.position.y;
             startingX = cards[0].transform.position.x;
@@ -36,10 +39,9 @@ namespace Assets
                 {
                     playersCardsPositions.Add(player.transform.GetChild(j).gameObject);
                     p.positions.Add(new(player.transform.GetChild(j).position, Players.transform.GetChild(i).rotation));
-                    //p.positions.Add(new(player.transform.GetChild(j).position, new(Players.transform.GetChild(i).rotation.x, Players.transform.GetChild(i).rotation.y, Players.transform.GetChild(i).rotation.z)));
                 }
                 players.Add(player);
-                playerList.Add(p);
+                game.Players.Add(p);
             }
         }
 
@@ -107,8 +109,9 @@ namespace Assets
             {
                 for (int j = 1; j <= players; j++)
                 {
-                    iTween.MoveTo(cards[i * players + j - 1], new(playerList[j - 1].positions[i].x, playerList[j - 1].positions[i].y+i, playerList[j - 1].positions[i].z) , .5f);
-                    iTween.RotateTo(cards[i * players + j - 1], iTween.Hash("x", playerList[j - 1].positions[i].xRotation, "y", playerList[j - 1].positions[i].yRotation, "z", playerList[j - 1].positions[i].zRotation-180, "time", .5f));
+                    game.Players[j - 1].cards.Add(game.Cards[i * players + j - 1]);
+                    iTween.MoveTo(cards[i * players + j - 1], new(game.Players[j - 1].positions[i].x, game.Players[j - 1].positions[i].y+i, game.Players[j - 1].positions[i].z) , .5f);
+                    iTween.RotateTo(cards[i * players + j - 1], iTween.Hash("x", game.Players[j - 1].positions[i].xRotation, "y", game.Players[j - 1].positions[i].yRotation, "z", game.Players[j - 1].positions[i].zRotation-180, "time", .5f));
                     yield return new WaitForSeconds(.5f);
                 }
             }
