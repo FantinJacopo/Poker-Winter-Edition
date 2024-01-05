@@ -64,6 +64,7 @@
     <Compile Include="Assets\Game.cs" />
     <Compile Include="Assets\Animations.cs" />
     <Compile Include="Assets\SettingsMenu.cs" />
+    <Compile Include="Assets\PlayerCounter.cs" />
     <Compile Include="Assets\Card.cs" />
     <Compile Include="Assets\CardPositions.cs" />
     <Compile Include="Assets\MainMenu.cs" />

@@ -1,11 +1,14 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 namespace Assets
 {
     public class Animations : MonoBehaviour
     {
+        public Slider MySlider;
         List<GameObject> cards = new();
         List<GameObject> players = new();
         List<GameObject> playersCardsPositions = new();
@@ -48,13 +51,13 @@ namespace Assets
         // Update is called once per frame
         void Update()
         {
-            // pulsante sinistro del mouse cliccato
-            if (Input.GetMouseButtonDown(0))
-            {
-                StartCoroutine(ShuffleDeck());
-            }
+
         }
-        IEnumerator ShuffleDeck()
+        public void StartGame()
+        {
+            StartCoroutine(ShuffleDeck((int)MySlider.value));
+        }
+    IEnumerator ShuffleDeck(int playersCount)
         {
             // divide il mazzo in due parti uguali
             List<GameObject> half1 = cards.Take(cards.Count / 2).ToList();
@@ -100,7 +103,7 @@ namespace Assets
                 yield return new WaitForSeconds(.2f);
             }
             yield return new WaitForSeconds(.5f);
-            StartCoroutine(DealCards(players.Count));
+            StartCoroutine(DealCards(playersCount));
         }
 
         IEnumerator DealCards(int players)

@@ -359,6 +359,7 @@
 "Assets/Game.cs"
 "Assets/MainMenu.cs"
 "Assets/Player.cs"
+"Assets/PlayerCounter.cs"
 "Assets/SettingsMenu.cs"
 -langversion:9.0
 
