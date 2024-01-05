@@ -12,8 +12,6 @@ namespace Assets
         List<GameObject> cards = new();
         List<GameObject> players = new();
         List<GameObject> playersCardsPositions = new();
-        //List<Player> playerList = new();
-        //List<Card> cardsList = new();
         Game game = new();
 
         float startingY;
