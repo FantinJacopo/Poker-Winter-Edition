@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 150}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 0
-  controlID: 86
+  controlID: 157
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -361,7 +361,7 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_SearchFilter:
-    m_NameFilter: 
+    m_NameFilter: snow
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -369,26 +369,26 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 1
+    m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Brick Project Studio/Apartment Kit/_Prefabs/Props/Lighting
     m_Globs: []
-    m_OriginalText: 
+    m_OriginalText: snow
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets
+  - Assets/Brick Project Studio/Apartment Kit/_Prefabs/Props/Lighting
   m_LastFoldersGridSize: 67
-  m_LastProjectPath: C:\Users\Fantin Jacopo\Poker-Winter-Edition
+  m_LastProjectPath: C:\Users\Filippo\OneDrive\Desktop\Poker-Winter-Edition
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 20d10000
-    m_LastClickedID: 53536
-    m_ExpandedIDs: 0000000020d1000022d1000024d1000026d1000028d100002ad100002cd10000
+    scrollPos: {x: 0, y: 534}
+    m_SelectedIDs: d2f10000
+    m_LastClickedID: 61906
+    m_ExpandedIDs: 00000000e8f00000eaf00000ecf00000eef00000f0f00000f2f00000f4f00000f6f00000f8f00000faf00000fcf00000fef0000000f1000002f1000004f1000006f1000008f100000af100000cf100000ef10000d0f1000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -416,7 +416,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000020d1000022d1000024d1000026d1000028d100002ad100002cd10000
+    m_ExpandedIDs: 00000000e8f00000eaf00000ecf00000eef00000f0f00000f2f00000f4f00000f6f00000f8f00000faf00000fcf00000fef0000000f1000002f1000004f1000006f1000008f100000af100000cf100000ef10000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000e28d00005a73000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -556,25 +556,25 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 08c1feff
-      m_LastClickedID: -81656
-      m_ExpandedIDs: 08c1feff425dffff2498ffff9c99ffff149effff24faffff30fbffffe65b0000245e0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: CommunitySlots
-        m_OriginalName: CommunitySlots
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -81656
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 7}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -958,9 +958,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 899, y: 10}
+      snapOffset: {x: -244, y: 10}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 1
       id: UnityEditor.SceneViewCameraOverlay
       index: 8
       layout: 4
@@ -977,9 +977,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -43, y: 23.7, z: -5.2}
+    m_Target: {x: 8.136919, y: 32.070255, z: 4.1169033}
     speed: 2
-    m_Value: {x: -43, y: 23.7, z: -5.2}
+    m_Value: {x: 8.136919, y: 32.070255, z: 4.1169033}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1025,20 +1025,20 @@ MonoBehaviour:
     m_GridAxis: 0
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.33254182, y: 0.0047783065, z: -0.0018665909, w: 0.9430802}
+    m_Target: {x: 0.046392694, y: -0.90920174, z: 0.10451435, w: 0.4004136}
     speed: 2
-    m_Value: {x: 0.33254007, y: 0.0047782813, z: -0.0018665812, w: 0.94307524}
+    m_Value: {x: 0.046234615, y: -0.9097766, z: 0.104580976, w: 0.3990385}
   m_Size:
-    m_Target: 12.549807
+    m_Target: 281.40314
     speed: 2
-    m_Value: 12.549807
+    m_Value: 269.2853
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 0.94053
+    m_SpeedNormalized: 0.47
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1123,7 +1123,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
