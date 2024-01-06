@@ -23,7 +23,6 @@ namespace Assets
             suit = card.name.Split('_')[1];
             value = GetCardValue(card.name.Split('_')[0]);
             name = card.name;
-
         }
         private int GetCardValue(string val)
         {

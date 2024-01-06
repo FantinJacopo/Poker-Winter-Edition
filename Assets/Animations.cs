@@ -2,16 +2,23 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 namespace Assets
 {
     public class Animations : MonoBehaviour
     {
-        public Slider MySlider;
+        public GameObject helpPanel;
+        public UnityEngine.UI.Slider MySlider;
+        static bool helpActive = false;
+        public TextMeshProUGUI helpText;
         List<GameObject> cards = new();
         List<GameObject> players = new();
         List<GameObject> playersCardsPositions = new();
+        List<CardPosition> communityCardsPositions = new();
         Game game = new();
 
         float startingY;
@@ -23,6 +30,7 @@ namespace Assets
         {
             GameObject deck = GameObject.Find("Mazzo");
             GameObject Players = GameObject.Find("Players");
+            GameObject CommunitySlots = GameObject.Find("CommunitySlots");
             for (int i = 0; i < deck.transform.childCount; i++)
             {
                 GameObject card = deck.transform.GetChild(i).gameObject;
@@ -44,6 +52,11 @@ namespace Assets
                 players.Add(player);
                 game.Players.Add(p);
             }
+            for (int i = 0; i < CommunitySlots.transform.childCount; i++)
+            {
+                GameObject communitySlot = CommunitySlots.transform.GetChild(i).gameObject;
+                communityCardsPositions.Add(new(communitySlot.transform.position, communitySlot.transform.rotation));
+            }
         }
 
         // Update is called once per frame
@@ -55,7 +68,7 @@ namespace Assets
         {
             StartCoroutine(ShuffleDeck((int)MySlider.value));
         }
-    IEnumerator ShuffleDeck(int playersCount)
+        IEnumerator ShuffleDeck(int playersCount)
         {
             // divide il mazzo in due parti uguali
             List<GameObject> half1 = cards.Take(cards.Count / 2).ToList();
@@ -101,7 +114,8 @@ namespace Assets
                 yield return new WaitForSeconds(.2f);
             }
             yield return new WaitForSeconds(.5f);
-            StartCoroutine(DealCards(playersCount));
+            yield return StartCoroutine(DealCards(playersCount));
+            yield return StartCoroutine(Round(1, (int)MySlider.value));
         }
 
         IEnumerator DealCards(int players)
@@ -115,6 +129,45 @@ namespace Assets
                     iTween.RotateTo(cards[i * players + j - 1], iTween.Hash("x", game.Players[j - 1].positions[i].xRotation, "y", game.Players[j - 1].positions[i].yRotation, "z", game.Players[j - 1].positions[i].zRotation-180, "time", .5f));
                     yield return new WaitForSeconds(.5f);
                 }
+            }
+        }
+        public void GetHandEvaluation()
+        {
+            helpActive = !helpActive;
+            helpPanel.SetActive(helpActive);
+            if (helpActive)
+                helpText.text = game.CalculateHandStrength(game.Players[0]);
+        }
+        public IEnumerator Round(int round, int players)
+        {
+            switch (round)
+            {
+                case 1:
+                    for (int i = 0; i < 3; i++)
+                    {
+                        iTween.MoveTo(cards[(i+1)*2 * players + i], communityCardsPositions[i].ToVector3(), .5f);
+                        iTween.RotateTo(cards[(i+1) * players + i], iTween.Hash("x", communityCardsPositions[i].xRotation, "y", communityCardsPositions[i].yRotation, "z", communityCardsPositions[i].zRotation - 180, "time", .5f));
+                        yield return new WaitForSeconds(.5f);
+                    }
+                    break;
+                case 2:
+                    for(int i = 3; i < 4; i++)
+                    {
+                        iTween.MoveTo(cards[(i+1)*2 * players + i], communityCardsPositions[i].ToVector3(), .5f);
+                        iTween.RotateTo(cards[(i+1)*2 * players + i], iTween.Hash("x", communityCardsPositions[i].xRotation, "y", communityCardsPositions[i].yRotation, "z", communityCardsPositions[i].zRotation - 180, "time", .5f));
+                        yield return new WaitForSeconds(.5f);
+                    }
+                    break;
+                case 3:
+                    for (int i = 4; i < 5; i++)
+                    {
+                        iTween.MoveTo(cards[(i+ 1) * 2 * players + i], communityCardsPositions[i].ToVector3(), .5f);
+                        iTween.RotateTo(cards[(i + 1) * 2 * players + i], iTween.Hash("x", communityCardsPositions[i].xRotation, "y", communityCardsPositions[i].yRotation, "z", communityCardsPositions[i].zRotation - 180, "time", .5f));
+                        yield return new WaitForSeconds(.5f);
+                    }
+                    break;
+                default:
+                    break;
             }
         }
     }

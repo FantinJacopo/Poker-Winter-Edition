@@ -361,6 +361,7 @@
 "Assets/Card.cs"
 "Assets/CardPositions.cs"
 "Assets/Game.cs"
+"Assets/Hand.cs"
 "Assets/MainMenu.cs"
 "Assets/Player.cs"
 "Assets/PlayerCounter.cs"
