@@ -358,6 +358,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Animations.cs"
+"Assets/Bot.cs"
 "Assets/Brick Project Studio/Apartment Kit/Common/Scripts & Animation/Closet/ClosetopencloseDoor.cs"
 "Assets/Brick Project Studio/Apartment Kit/Common/Scripts & Animation/OvenOpen/OvenFlip.cs"
 "Assets/Brick Project Studio/Apartment Kit/Common/Scripts & Animation/Slide/BRGlassDoor.cs"

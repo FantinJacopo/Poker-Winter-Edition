@@ -8,7 +8,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -41,7 +41,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 431
-    width: 319
+    width: 340
     height: 217
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 319
+    width: 340
     height: 648
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 150}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 0
-  controlID: 157
+  controlID: 86
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 319
+    width: 340
     height: 431
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -314,9 +314,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 319
+    x: 340
     y: 0
-    width: 1145
+    width: 1124
     height: 648
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -361,7 +361,7 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_SearchFilter:
-    m_NameFilter: snow
+    m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -369,26 +369,26 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 0
+    m_SearchArea: 1
     m_Folders:
-    - Assets/Brick Project Studio/Apartment Kit/_Prefabs/Props/Lighting
+    - Assets
     m_Globs: []
-    m_OriginalText: snow
+    m_OriginalText: 
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets/Brick Project Studio/Apartment Kit/_Prefabs/Props/Lighting
+  - Assets
   m_LastFoldersGridSize: 67
-  m_LastProjectPath: C:\Users\Filippo\OneDrive\Desktop\Poker-Winter-Edition
+  m_LastProjectPath: C:\Users\Fantin Jacopo\Documents\GitHub\Poker-Winter-Edition
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 534}
-    m_SelectedIDs: d2f10000
-    m_LastClickedID: 61906
-    m_ExpandedIDs: 00000000e8f00000eaf00000ecf00000eef00000f0f00000f2f00000f4f00000f6f00000f8f00000faf00000fcf00000fef0000000f1000002f1000004f1000006f1000008f100000af100000cf100000ef10000d0f1000000ca9a3b
+    scrollPos: {x: 0, y: 26}
+    m_SelectedIDs: 1cf10000
+    m_LastClickedID: 61724
+    m_ExpandedIDs: 000000001cf10000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -416,7 +416,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e8f00000eaf00000ecf00000eef00000f0f00000f2f00000f4f00000f6f00000f8f00000faf00000fcf00000fef0000000f1000002f1000004f1000006f1000008f100000af100000cf100000ef10000
+    m_ExpandedIDs: 000000001cf10000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -541,7 +541,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 318
+    width: 339
     height: 410
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -574,7 +574,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 7}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -602,9 +602,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 319
+    x: 340
     y: 73
-    width: 1143
+    width: 1122
     height: 627
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -958,9 +958,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -244, y: 10}
+      snapOffset: {x: 877, y: 10}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
+      snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
       index: 8
       layout: 4
@@ -977,9 +977,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 8.136919, y: 32.070255, z: 4.1169033}
+    m_Target: {x: -46.253185, y: 26.225113, z: -14.417886}
     speed: 2
-    m_Value: {x: 8.136919, y: 32.070255, z: 4.1169033}
+    m_Value: {x: -46.253185, y: 26.225113, z: -14.417886}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1025,20 +1025,20 @@ MonoBehaviour:
     m_GridAxis: 0
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.046392694, y: -0.90920174, z: 0.10451435, w: 0.4004136}
+    m_Target: {x: 0.28173962, y: 0.003349226, z: -0.0013125611, w: 0.9595322}
     speed: 2
-    m_Value: {x: 0.046234615, y: -0.9097766, z: 0.104580976, w: 0.3990385}
+    m_Value: {x: -0.28173962, y: -0.0033492257, z: 0.0013125611, w: -0.95953214}
   m_Size:
-    m_Target: 281.40314
+    m_Target: 35.60573
     speed: 2
-    m_Value: 269.2853
+    m_Value: 34.072468
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_CameraSettings:
-    m_Speed: 0.94053
-    m_SpeedNormalized: 0.47
+    m_Speed: 1.0005
+    m_SpeedNormalized: 0.5
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1076,9 +1076,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 319
+    x: 340
     y: 73
-    width: 1143
+    width: 1122
     height: 627
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1132,23 +1132,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1143
+      width: 1122
       height: 606
     m_Scale: {x: 0.5611111, y: 0.5611111}
-    m_Translation: {x: 571.5, y: 303}
+    m_Translation: {x: 561, y: 303}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1018.5149
+      x: -999.802
       y: -540
-      width: 2037.0298
+      width: 1999.604
       height: 1080
     m_MinimalGUI: 1
   m_defaultScale: 0.5611111
-  m_LastWindowPixelSize: {x: 1143, y: 627}
+  m_LastWindowPixelSize: {x: 1122, y: 627}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1176,7 +1176,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 504
-    width: 318
+    width: 339
     height: 196
   m_SerializedDataModeController:
     m_DataMode: 0

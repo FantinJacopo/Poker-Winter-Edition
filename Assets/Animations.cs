@@ -12,13 +12,17 @@ namespace Assets
     public class Animations : MonoBehaviour
     {
         public GameObject helpPanel;
+        public GameObject raisePanel;
+        public GameObject buttonsPanel;
         public UnityEngine.UI.Slider MySlider;
-        static bool helpActive = false;
         public TextMeshProUGUI helpText;
+        public TextMeshProUGUI raiseInput;
+
         List<GameObject> cards = new();
         List<GameObject> players = new();
         List<GameObject> playersCardsPositions = new();
         List<CardPosition> communityCardsPositions = new();
+
         Game game = new();
 
         float startingY;
@@ -43,14 +47,14 @@ namespace Assets
             for (int i = 0; i < Players.transform.childCount; i++)
             {
                 GameObject player = Players.transform.GetChild(i).gameObject;
-                Player p = new(i);
+                Bot p = new(i);
                 for (int j = 0; j < player.transform.childCount; j++)
                 {
                     playersCardsPositions.Add(player.transform.GetChild(j).gameObject);
                     p.positions.Add(new(player.transform.GetChild(j).position, Players.transform.GetChild(i).rotation));
                 }
                 players.Add(player);
-                game.Players.Add(p);
+                game.AddPlayer(p);
             }
             for (int i = 0; i < CommunitySlots.transform.childCount; i++)
             {
@@ -58,7 +62,6 @@ namespace Assets
                 communityCardsPositions.Add(new(communitySlot.transform.position, communitySlot.transform.rotation));
             }
         }
-
         // Update is called once per frame
         void Update()
         {
@@ -68,6 +71,7 @@ namespace Assets
         {
             StartCoroutine(ShuffleDeck((int)MySlider.value));
         }
+        
         IEnumerator ShuffleDeck(int playersCount)
         {
             // divide il mazzo in due parti uguali
@@ -115,6 +119,7 @@ namespace Assets
             }
             yield return new WaitForSeconds(.5f);
             yield return StartCoroutine(DealCards(playersCount));
+            buttonsPanel.SetActive(true);
             yield return StartCoroutine(Round(1, (int)MySlider.value));
         }
 
@@ -125,17 +130,28 @@ namespace Assets
                 for (int j = 1; j <= players; j++)
                 {
                     game.Players[j - 1].cards.Add(game.Cards[i * players + j - 1]);
-                    iTween.MoveTo(cards[i * players + j - 1], new(game.Players[j - 1].positions[i].x, game.Players[j - 1].positions[i].y+i, game.Players[j - 1].positions[i].z) , .5f);
-                    iTween.RotateTo(cards[i * players + j - 1], iTween.Hash("x", game.Players[j - 1].positions[i].xRotation, "y", game.Players[j - 1].positions[i].yRotation, "z", game.Players[j - 1].positions[i].zRotation-180, "time", .5f));
+                    iTween.MoveTo(cards[i * players + j - 1], new(game.Players[j - 1].positions[i].x, game.Players[j - 1].positions[i].y + i, game.Players[j - 1].positions[i].z), .5f);
+                    iTween.RotateTo(cards[i * players + j - 1], iTween.Hash("x", game.Players[j - 1].positions[i].xRotation, "y", game.Players[j - 1].positions[i].yRotation, "z", game.Players[j - 1].positions[i].zRotation - 180, "time", .5f));
                     yield return new WaitForSeconds(.5f);
                 }
             }
         }
         public void GetHandEvaluation()
         {
-            helpActive = !helpActive;
-            helpPanel.SetActive(helpActive);
-            if (helpActive)
+            if (!raisePanel.activeSelf && !helpPanel.activeSelf) // entrambi giù
+            {
+                helpPanel.SetActive(true);
+            }
+            else if (raisePanel.activeSelf)
+            {
+                raisePanel.SetActive(false);
+                helpPanel.SetActive(true);
+            }
+            else if (helpPanel.activeSelf)
+            {
+                helpPanel.SetActive(false);
+            }
+            if (helpPanel.activeSelf)
                 helpText.text = game.CalculateHandStrength(game.Players[0]);
         }
         public IEnumerator Round(int round, int players)
@@ -145,30 +161,76 @@ namespace Assets
                 case 1:
                     for (int i = 0; i < 3; i++)
                     {
-                        iTween.MoveTo(cards[(i+1)*2 * players + i], communityCardsPositions[i].ToVector3(), .5f);
-                        iTween.RotateTo(cards[(i+1) * players + i], iTween.Hash("x", communityCardsPositions[i].xRotation, "y", communityCardsPositions[i].yRotation, "z", communityCardsPositions[i].zRotation - 180, "time", .5f));
+                        iTween.MoveTo(cards[2 * players + i], communityCardsPositions[i].ToVector3(), .5f);
                         yield return new WaitForSeconds(.5f);
+                        iTween.RotateTo(cards[2 * players + i], iTween.Hash("x", communityCardsPositions[i].xRotation, "y", communityCardsPositions[i].yRotation, "z", communityCardsPositions[i].zRotation - 180, "time", .2f));
+                        yield return new WaitForSeconds(.2f);
                     }
                     break;
                 case 2:
-                    for(int i = 3; i < 4; i++)
+                    for (int i = 3; i < 4; i++)
                     {
-                        iTween.MoveTo(cards[(i+1)*2 * players + i], communityCardsPositions[i].ToVector3(), .5f);
-                        iTween.RotateTo(cards[(i+1)*2 * players + i], iTween.Hash("x", communityCardsPositions[i].xRotation, "y", communityCardsPositions[i].yRotation, "z", communityCardsPositions[i].zRotation - 180, "time", .5f));
+                        iTween.MoveTo(cards[2 * players + i], communityCardsPositions[i].ToVector3(), .5f);
                         yield return new WaitForSeconds(.5f);
+                        iTween.RotateTo(cards[2 * players + i], iTween.Hash("x", communityCardsPositions[i].xRotation, "y", communityCardsPositions[i].yRotation, "z", communityCardsPositions[i].zRotation - 180, "time", .2f));
+                        yield return new WaitForSeconds(.2f);
                     }
                     break;
                 case 3:
                     for (int i = 4; i < 5; i++)
                     {
-                        iTween.MoveTo(cards[(i+ 1) * 2 * players + i], communityCardsPositions[i].ToVector3(), .5f);
-                        iTween.RotateTo(cards[(i + 1) * 2 * players + i], iTween.Hash("x", communityCardsPositions[i].xRotation, "y", communityCardsPositions[i].yRotation, "z", communityCardsPositions[i].zRotation - 180, "time", .5f));
+                        iTween.MoveTo(cards[2 * players + i], communityCardsPositions[i].ToVector3(), .5f);
                         yield return new WaitForSeconds(.5f);
+                        iTween.RotateTo(cards[2 * players + i], iTween.Hash("x", communityCardsPositions[i].xRotation, "y", communityCardsPositions[i].yRotation, "z", communityCardsPositions[i].zRotation - 180, "time", .2f));
+                        yield return new WaitForSeconds(.2f);
                     }
                     break;
                 default:
                     break;
             }
+        }
+        public void RaisePanel()
+        {
+            if(!raisePanel.activeSelf && !helpPanel.activeSelf) // entrambi giù
+            {
+                raisePanel.SetActive(true);
+            }
+            else if (helpPanel.activeSelf)
+            {
+                helpPanel.SetActive(false);
+                raisePanel.SetActive(true);
+            }
+            else if (raisePanel.activeSelf)
+            {
+                raisePanel.SetActive(false);
+            }
+        }
+        public void RaiseConfirm(string s)
+        {
+            if (int.TryParse(s, out int amount))
+            {
+                raiseInput.text = string.Empty;//non ho idea del perchè non funzioni, nella funzione getHandEvaluation ho usato lo stesso metodo e funziona 
+                raisePanel.SetActive(false);
+                game.PlayerRaise(amount);
+            }
+            else
+            {
+                Debug.LogError("Invalid input: " + s);
+            }
+            //raisePanel.SetActive(false);
+        }
+
+        public void Call()
+        {
+            game.PlayerCall();
+        }
+        public void Check()
+        {
+            game.PlayerCheck();
+        }
+        public void Fold()
+        {
+            game.PlayerFold();
         }
     }
 }

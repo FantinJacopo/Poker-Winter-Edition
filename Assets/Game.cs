@@ -14,9 +14,45 @@ namespace Assets
         public List<Player> Players { get; set; }
         public List<Card> Cards { get; set; }
         public List<Card> commonCards { get; set; }
-        public Game() { Players = new(); Cards = new(); commonCards = new(); }
-        public Game(List<Player> players) { Players = players; Cards = new(); commonCards = new(); }
-
+        public int actualBet { get; set; }
+        public int pot { get; set; }
+        public int playerTurn { get; set; }
+        public int maxRaise = 2;
+        public int raiseCounter;
+        public int raiserIndex;
+        public List<bool> playersInGame;
+        public bool allIn { get; set; }
+        public Game() { 
+            Players = new(); 
+            Cards = new(); 
+            commonCards = new();
+            playersInGame = new();
+            playerTurn = 0;
+            allIn = false;
+            actualBet = 0;
+            pot = 0;
+            raiseCounter = 0;
+            raiserIndex = 0;
+        }
+        public Game(List<Player> players) { 
+            Players = players;
+            Cards = new();
+            commonCards = new();
+            playersInGame = new();
+            foreach(var player in players) playersInGame.Add(true);
+            playerTurn = 0;
+            allIn = false;
+            actualBet = 0;
+            pot = 0;
+            raiseCounter = 0;
+            raiserIndex = 0;
+        }
+        
+        public void AddPlayer(Player player)
+        {
+            Players.Add(player);
+            playersInGame.Add(true);
+        }
 
         public string CalculateHandStrength(Player player)
         {
@@ -127,6 +163,69 @@ namespace Assets
             else if (k == 1)
                 return "Hand: One Pair";
             return "Hand: High Card";
+        }
+
+        public void StartGame()
+        {
+            
+        }
+        public void PlayBotMoves()
+        {
+            playerTurn = 0;
+            raiseCounter = 0;
+            foreach (Player player in Players)
+            {
+                if (playersInGame[playerTurn])
+                {
+                    if(playerTurn != 0)
+                    {
+                        if((player as Bot).MakeMove(this, out int bet, out bool allIn, out string move))
+                        {
+                            if (allIn) this.allIn = true;
+                            if(bet > actualBet)
+                            {
+                                raiseCounter++;
+                                raiserIndex = playerTurn;
+                                actualBet = bet;
+                                
+                            }
+                            playerTurn++;
+                        }
+                        else
+                        {
+                            playersInGame[playerTurn] = false;
+                            Players[playerTurn].money -= Players[playerTurn].bet;
+                            playerTurn++;
+                        }
+                    }
+                }
+            }
+        }
+
+        public void PlayerCall()
+        {
+            Players[0].bet += actualBet - Players[0].bet;
+            playerTurn++;
+            PlayBotMoves();
+        }
+        public void PlayerRaise(int amount)
+        {
+            Players[0].bet += amount;
+            playerTurn++;
+            raiseCounter++;
+            raiserIndex = 0;
+            PlayBotMoves();
+        }
+
+        public void PlayerCheck()
+        {
+            playerTurn++;
+            PlayBotMoves();
+        }
+        public void PlayerFold()
+        {
+            Players[0].money -= Players[0].bet;
+            Players[0].bet = 0;
         }
     }
 }
